@@ -1,0 +1,43 @@
+
+<html>
+<head>
+<title>Calculadora HTML</title>
+git remote add origin https://github.com/cesclavijo/Calculadora.git
+git push -u origin master
+</head>
+<body bgcolor= "#000000" text= "gold">
+<center><input type="textfield" name="ans" value=""><br>
+<form name="calculator" >
+<table border="0px" cellpadding="1" cellspacing="1">
+<tr>
+<td align="left"><input type="button" value="1" onClick="document.calculator.ans.value+='1'"></td>
+<td align="left"><input type="button" value="2" onClick="document.calculator.ans.value+='2'"></td>
+<td align="left"><input type="button" value="3" onClick="document.calculator.ans.value+='3'"></td>
+<td align="left"><input type="button" value="+" style='width:100%' onClick="document.calculator.ans.value+='+'"></td>
+</tr>
+<tr>
+<td align="left"><input type="button" value="4" onClick="document.calculator.ans.value+='4'"></td>
+<td align="left"><input type="button" value="5" onClick="document.calculator.ans.value+='5'"></td>
+<td align="left"><input type="button" value="6" onClick="document.calculator.ans.value+='6'"></td>
+<td align="left"><input type="button" value="-" style='width:100%' onClick="document.calculator.ans.value+='-'"></td>
+</tr>
+<tr>
+<td align="left"><input type="button" value="7" onClick="document.calculator.ans.value+='7'"></td>
+<td align="left"><input type="button" value="8" onClick="document.calculator.ans.value+='8'"></td>
+<td align="left"><input type="button" value="9" onClick="document.calculator.ans.value+='9'"></td>
+<td align="left"><input type="button" value="*" style='width:100%' onClick="document.calculator.ans.value+='*'"></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"><input type="button" value="0" onClick="document.calculator.ans.value+='0'"></td>
+<td></td>
+<td><input type="button" value="/" style='width:100%' onClick="document.calculator.ans.value+='/'"></td>
+</tr>
+<tr>
+<td colspan="2"><input type="reset" value="Reset"></td>
+<td colspan="2"><input type="button" value="=" style='width:100%' onClick="document.calculator.ans.value=eval(document.calculator.ans.value)"></td>
+</tr>
+</table>
+</form></center>
+</body>
+</html>
